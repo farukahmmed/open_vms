@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include open_vms *.css
+recursive-include open_vms *.csv
+recursive-include open_vms *.html
+recursive-include open_vms *.ico
+recursive-include open_vms *.js
+recursive-include open_vms *.json
+recursive-include open_vms *.md
+recursive-include open_vms *.png
+recursive-include open_vms *.py
+recursive-include open_vms *.svg
+recursive-include open_vms *.txt
+recursive-exclude open_vms *.pyc
