@@ -1,0 +1,36 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "width": "Half"
+  },
+  {
+   "chart": "Vehicle by Company",
+   "width": "Half"
+  },
+  {
+   "chart": "Next Renewal",
+   "width": "Half"
+  },
+  {
+   "chart": "Next Renewal",
+   "width": "Half"
+  },
+  {
+   "chart": "Vehicle Chart: Group by Company",
+   "width": "Half"
+  }
+ ],
+ "creation": "2022-06-28 10:42:29.596834",
+ "dashboard_name": "Fleet Info Entry",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2022-06-28 17:55:35.902930",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "Fleet Info Entry",
+ "owner": "Administrator"
+}
