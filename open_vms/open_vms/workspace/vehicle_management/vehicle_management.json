@@ -14,7 +14,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Master Data",
-   "link_count": 4,
+   "link_count": 5,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -57,9 +57,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "User List",
+   "link_count": 0,
+   "link_to": "vms_UserList",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-06-27 18:29:34.180545",
+ "modified": "2022-07-04 14:33:51.170536",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "VEHICLE MANAGEMENT",
