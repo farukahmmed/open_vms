@@ -1,35 +1,26 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:renewal_type",
- "creation": "2022-06-27 15:44:38.376080",
+ "creation": "2022-07-26 17:50:49.667545",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "renewal_type",
-  "description"
+  "p"
  ],
  "fields": [
   {
-   "fieldname": "renewal_type",
+   "fieldname": "p",
    "fieldtype": "Data",
-   "label": "Renewal Type",
-   "unique": 1
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Data",
-   "label": "Description"
+   "label": "p"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-27 15:44:38.376080",
+ "modified": "2022-07-26 17:50:49.667545",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Renewal Types",
- "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

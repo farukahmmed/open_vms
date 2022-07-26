@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class Testvms_UserList(FrappeTestCase):
+class Testvms_Renewal_Types(FrappeTestCase):
 	pass

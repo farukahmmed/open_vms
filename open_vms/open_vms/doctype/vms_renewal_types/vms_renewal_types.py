@@ -4,5 +4,5 @@
 # import frappe
 from frappe.model.document import Document
 
-class vms_UserList(Document):
+class vms_Renewal_Types(Document):
 	pass

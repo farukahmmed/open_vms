@@ -1,37 +1,26 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:fleet_type",
- "creation": "2022-06-27 14:38:51.524143",
+ "creation": "2022-07-26 17:30:36.600598",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "fleet_type",
-  "description"
+  "p"
  ],
  "fields": [
   {
-   "fieldname": "fleet_type",
+   "fieldname": "p",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Fleet Type",
-   "reqd": 1,
-   "unique": 1
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Data",
-   "label": "Description"
+   "label": "p"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-27 14:39:24.371843",
+ "modified": "2022-07-26 17:30:36.600598",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Fleet Types",
- "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

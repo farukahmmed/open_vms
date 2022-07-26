@@ -14,62 +14,22 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Master Data",
-   "link_count": 5,
+   "link_count": 1,
    "onboard": 0,
    "type": "Card Break"
   },
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Company Info",
+   "label": "Company",
    "link_count": 0,
-   "link_to": "Company Info",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Fleet Types",
-   "link_count": 0,
-   "link_to": "Fleet Types",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Vehicle Types",
-   "link_count": 0,
-   "link_to": "Vehicle Types",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Renewal Types",
-   "link_count": 0,
-   "link_to": "Renewal Types",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "User List",
-   "link_count": 0,
-   "link_to": "vms_UserList",
+   "link_to": "Company",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2022-07-04 14:33:51.170536",
+ "modified": "2022-07-26 17:52:37.035009",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "VEHICLE MANAGEMENT",

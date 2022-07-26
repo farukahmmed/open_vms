@@ -1,37 +1,26 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:vehicle_type",
- "creation": "2022-06-27 14:45:46.918802",
+ "creation": "2022-07-26 17:33:59.447472",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "vehicle_type",
-  "description"
+  "ve"
  ],
  "fields": [
   {
-   "fieldname": "vehicle_type",
+   "fieldname": "ve",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Vehicle Type",
-   "reqd": 1,
-   "unique": 1
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Data",
-   "label": "Description"
+   "label": "ve"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-27 14:46:36.436242",
+ "modified": "2022-07-26 17:33:59.447472",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Vehicle Types",
- "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
