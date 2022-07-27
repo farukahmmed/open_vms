@@ -26,7 +26,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Vehicle Number",
-   "options": "vms_Vehicle_List",
+   "options": "vms_Vehicle_Entry",
    "reqd": 1
   },
   {
@@ -87,7 +87,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-27 11:00:52.948743",
+ "modified": "2022-07-27 13:51:39.388823",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "vms_Renewal_Entry",
