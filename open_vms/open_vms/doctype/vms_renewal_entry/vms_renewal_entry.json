@@ -1,0 +1,113 @@
+{
+ "_comments": "[]",
+ "_liked_by": "[]",
+ "actions": [],
+ "autoname": "format:{vehicle_number}-{renewal_date}-{renewal_type}",
+ "creation": "2022-07-26 18:24:13.035204",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle_number",
+  "renewal_type",
+  "renewal_date",
+  "from_date",
+  "to_date",
+  "next_renewal_date",
+  "column_break_1",
+  "payment_referance",
+  "amunt",
+  "certificate",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle Number",
+   "options": "vms_Vehicle_List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "renewal_type",
+   "fieldtype": "Link",
+   "label": "Renewal Type",
+   "options": "vms_Renewal_Types",
+   "reqd": 1
+  },
+  {
+   "fieldname": "renewal_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Renewal Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "next_renewal_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Next Renewal Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_referance",
+   "fieldtype": "Data",
+   "label": "Payment Referance"
+  },
+  {
+   "fieldname": "amunt",
+   "fieldtype": "Float",
+   "label": "Amunt"
+  },
+  {
+   "fieldname": "certificate",
+   "fieldtype": "Attach Image",
+   "label": "Certificate"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-27 11:00:52.948743",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "vms_Renewal_Entry",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
