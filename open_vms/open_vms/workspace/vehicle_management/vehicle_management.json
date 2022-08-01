@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">VEHICLE MANAGEMENT</span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"VMS\",\"col\":4}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">VEHICLE MANAGEMENT</span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"VMS\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"REPORTS\",\"col\":4}}]",
  "creation": "2022-06-27 17:52:51.059694",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -105,9 +105,27 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "REPORTS",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Renewal Required",
+   "link_count": 0,
+   "link_to": "vms_Renewal_Required",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-07-27 11:28:58.394614",
+ "modified": "2022-08-01 18:15:04.995456",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "VEHICLE MANAGEMENT",
