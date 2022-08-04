@@ -39,7 +39,11 @@
   "amended_from",
   "fleet_info_section",
   "vehicle_type",
-  "fleet_type"
+  "fleet_type",
+  "engine_number",
+  "cc",
+  "tayer_size",
+  "fleet_capacity"
  ],
  "fields": [
   {
@@ -60,7 +64,7 @@
   {
    "fieldname": "make",
    "fieldtype": "Data",
-   "label": "Make",
+   "label": "Make/Brand",
    "reqd": 1
   },
   {
@@ -162,7 +166,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Fuel Type",
-   "options": "LNG\nOctane\nPetrol\nDiesel\nCNG\nElectric",
+   "options": "LPG\nOctane\nPetrol\nDiesel\nCNG\nElectric\nOctane/LPG\nOctane/CNG",
    "reqd": 1
   },
   {
@@ -224,10 +228,31 @@
    "label": "Fleet Type",
    "options": "vms_Fleet_Types",
    "reqd": 1
+  },
+  {
+   "fieldname": "engine_number",
+   "fieldtype": "Data",
+   "label": "Engine Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cc",
+   "fieldtype": "Float",
+   "label": "CC"
+  },
+  {
+   "fieldname": "tayer_size",
+   "fieldtype": "Float",
+   "label": "Tayer Size"
+  },
+  {
+   "fieldname": "fleet_capacity",
+   "fieldtype": "Data",
+   "label": "Capacity"
   }
  ],
  "links": [],
- "modified": "2022-07-27 15:59:53.651468",
+ "modified": "2022-08-04 14:49:10.025803",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "vms_Vehicle_Entry",
