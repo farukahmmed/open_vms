@@ -10,7 +10,8 @@
  "engine": "InnoDB",
  "field_order": [
   "renewal_type",
-  "description"
+  "description",
+  "disable"
  ],
  "fields": [
   {
@@ -25,11 +26,17 @@
    "fieldname": "description",
    "fieldtype": "Data",
    "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 16:01:35.070893",
+ "modified": "2022-08-26 10:09:02.577024",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "vms_Renewal_Types",
@@ -70,7 +77,6 @@
    "share": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
