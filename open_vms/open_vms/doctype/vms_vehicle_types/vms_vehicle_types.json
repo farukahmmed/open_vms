@@ -11,7 +11,8 @@
  "engine": "InnoDB",
  "field_order": [
   "vehicle_type",
-  "description"
+  "description",
+  "disable"
  ],
  "fields": [
   {
@@ -26,11 +27,17 @@
    "fieldname": "description",
    "fieldtype": "Data",
    "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-27 11:19:06.216085",
+ "modified": "2022-08-26 15:30:09.688850",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "vms_Vehicle_Types",
