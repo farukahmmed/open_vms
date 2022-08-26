@@ -83,7 +83,7 @@
  "idx": 0,
  "is_standard": "Yes",
  "letter_head": "Panam Logistics Ltd.",
- "modified": "2022-08-02 11:23:17.256289",
+ "modified": "2022-08-26 16:22:37.512304",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "vms_Renewal_Required",
@@ -96,6 +96,12 @@
  "roles": [
   {
    "role": "System Manager"
+  },
+  {
+   "role": "VMS Manager"
+  },
+  {
+   "role": "VMS User"
   }
  ]
 }

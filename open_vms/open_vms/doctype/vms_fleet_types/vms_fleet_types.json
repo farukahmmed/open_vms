@@ -30,7 +30,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-27 11:17:32.289674",
+ "modified": "2022-08-26 16:19:31.002767",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "vms_Fleet_Types",
@@ -48,6 +48,27 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "VMS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "VMS User",
+   "share": 1
   }
  ],
  "sort_field": "modified",
