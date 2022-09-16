@@ -40,6 +40,7 @@
   "fleet_type",
   "engine_number",
   "cc",
+  "standard_kpl",
   "tayer_size",
   "fleet_capacity"
  ],
@@ -242,17 +243,22 @@
   },
   {
    "fieldname": "tayer_size",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "label": "Tayer Size"
   },
   {
    "fieldname": "fleet_capacity",
    "fieldtype": "Data",
    "label": "Capacity"
+  },
+  {
+   "fieldname": "standard_kpl",
+   "fieldtype": "Float",
+   "label": "Standard KPL"
   }
  ],
  "links": [],
- "modified": "2022-09-13 10:12:57.836867",
+ "modified": "2022-09-16 14:53:11.046632",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "vms_Vehicle_Entry",
