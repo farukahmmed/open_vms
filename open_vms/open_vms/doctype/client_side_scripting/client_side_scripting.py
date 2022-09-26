@@ -2,8 +2,7 @@
 # For license information, please see license.txt
 
 # import frappe
-
 from frappe.model.document import Document
 
-class vms_Fleet_Types(Document):
+class ClientSideScripting(Document):
 	pass

@@ -8,7 +8,7 @@
  "hide_custom": 0,
  "icon": "setting-gear",
  "idx": 0,
- "label": "VEHICLE MANAGEMENT",
+ "label": "VMS",
  "links": [
   {
    "hidden": 0,
@@ -125,10 +125,10 @@
    "type": "Link"
   }
  ],
- "modified": "2022-08-01 18:15:04.995456",
+ "modified": "2022-09-26 09:39:16.383413",
  "modified_by": "Administrator",
  "module": "Open VMS",
- "name": "VEHICLE MANAGEMENT",
+ "name": "VMS",
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
@@ -136,5 +136,5 @@
  "roles": [],
  "sequence_id": 30.0,
  "shortcuts": [],
- "title": "VEHICLE MANAGEMENT"
+ "title": "VMS"
 }
