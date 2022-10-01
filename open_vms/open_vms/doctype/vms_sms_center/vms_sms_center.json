@@ -1,0 +1,272 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "autoname": "autoincrement",
+ "creation": "2022-09-30 11:54:53.004270",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "travelers_section",
+  "send_to",
+  "driver_id",
+  "driver_name",
+  "driver_cell_number",
+  "column_break_6",
+  "employee_id",
+  "employee_name",
+  "employee_cell_number",
+  "section_break_20",
+  "vehicle_number",
+  "travel_date",
+  "travel_time",
+  "column_break_1",
+  "pick_from",
+  "to",
+  "number_of_travelers",
+  "section_break_27",
+  "customer",
+  "supplier",
+  "sales_partner",
+  "department",
+  "branch",
+  "create_receiver_list",
+  "receiver_list",
+  "column_break9",
+  "message",
+  "total_characters",
+  "total_messages",
+  "send_sms"
+ ],
+ "fields": [
+  {
+   "fieldname": "send_to",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Send To",
+   "options": "\nAll Contact\nAll Customer Contact\nAll Supplier Contact\nAll Sales Partner Contact\nAll Lead (Open)\nAll Employee (Active)\nAll Sales Person"
+  },
+  {
+   "depends_on": "eval:doc.send_to=='All Customer Contact'",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "depends_on": "eval:doc.send_to=='All Supplier Contact'",
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "depends_on": "eval:doc.send_to=='All Sales Partner Contact'",
+   "fieldname": "sales_partner",
+   "fieldtype": "Link",
+   "label": "Sales Partner",
+   "options": "Sales Partner"
+  },
+  {
+   "depends_on": "eval:doc.send_to=='All Employee (Active)'",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "depends_on": "eval:doc.send_to=='All Employee (Active)'",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "create_receiver_list",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Create Receiver List",
+   "options": "create_receiver_list"
+  },
+  {
+   "fieldname": "receiver_list",
+   "fieldtype": "Code",
+   "label": "Receiver List"
+  },
+  {
+   "fieldname": "column_break9",
+   "fieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "default": "-Panam ERP-",
+   "description": "Messages greater than 160 characters will be split into multiple messages",
+   "fieldname": "message",
+   "fieldtype": "Text",
+   "label": "Message"
+  },
+  {
+   "fieldname": "total_characters",
+   "fieldtype": "Int",
+   "label": "Total Characters",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_messages",
+   "fieldtype": "Int",
+   "label": "Total Message(s)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "send_sms",
+   "fieldtype": "Button",
+   "label": "Send SMS",
+   "options": "send_sms"
+  },
+  {
+   "fieldname": "driver_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Driver ID",
+   "options": "Driver",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver_cell_number",
+   "fieldtype": "Data",
+   "label": "Driver Cell Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vehicle_number",
+   "fieldtype": "Link",
+   "label": "Vehicle Number",
+   "options": "vms_Vehicle_Entry"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Data",
+   "label": "To",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pick_from",
+   "fieldtype": "Data",
+   "label": "Pick From",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee ID",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_cell_number",
+   "fieldtype": "Data",
+   "label": "Employee Cell Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "travel_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Travel Date"
+  },
+  {
+   "fieldname": "travel_time",
+   "fieldtype": "Time",
+   "label": "Travel Time"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break",
+   "label": "TRAVEL TIME"
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break",
+   "label": "MESSAGE"
+  },
+  {
+   "fieldname": "travelers_section",
+   "fieldtype": "Section Break",
+   "label": "TRAVELERS"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "fieldname": "number_of_travelers",
+   "fieldtype": "Int",
+   "label": "Number of Travelers"
+  }
+ ],
+ "icon": "fa fa-mobile-phone",
+ "links": [],
+ "modified": "2022-10-01 16:32:57.120019",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "vms_SMS_Center",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "VMS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "VMS User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "read_only": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
