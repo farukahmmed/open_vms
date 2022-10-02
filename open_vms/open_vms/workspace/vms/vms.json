@@ -136,16 +136,16 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Vehicle Allocation Summary",
    "link_count": 0,
-   "link_to": "Vehicle Allocation Summary",
+   "link_to": "vms_Vehicle_Allocation_Summary",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2022-10-01 17:19:50.210646",
+ "modified": "2022-10-02 11:21:31.377510",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "VMS",

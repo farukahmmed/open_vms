@@ -23,6 +23,7 @@
   "pick_from",
   "to",
   "number_of_travelers",
+  "remarks",
   "section_break_27",
   "customer",
   "supplier",
@@ -223,11 +224,16 @@
    "fieldname": "number_of_travelers",
    "fieldtype": "Int",
    "label": "Number of Travelers"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
   }
  ],
  "icon": "fa fa-mobile-phone",
  "links": [],
- "modified": "2022-10-01 16:32:57.120019",
+ "modified": "2022-10-02 11:05:50.004671",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "vms_SMS_Center",
