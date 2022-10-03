@@ -202,17 +202,17 @@
   },
   {
    "fieldname": "section_break_20",
-   "fieldtype": "Section Break",
+   "fieldtype": "Tab Break",
    "label": "TRAVEL TIME"
   },
   {
    "fieldname": "section_break_27",
-   "fieldtype": "Section Break",
+   "fieldtype": "Tab Break",
    "label": "MESSAGE"
   },
   {
    "fieldname": "travelers_section",
-   "fieldtype": "Section Break",
+   "fieldtype": "Tab Break",
    "label": "TRAVELERS"
   },
   {
@@ -233,7 +233,7 @@
  ],
  "icon": "fa fa-mobile-phone",
  "links": [],
- "modified": "2022-10-02 11:05:50.004671",
+ "modified": "2022-10-03 13:40:03.057962",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "vms_SMS_Center",
