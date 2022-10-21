@@ -1,0 +1,40 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2022-10-18 12:23:29.488111",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "bom_id",
+   "fieldtype": "Link",
+   "label": "BOM ID",
+   "mandatory": 1,
+   "options": "BOM",
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Panam Logistics Ltd.",
+ "modified": "2022-10-18 12:27:37.536784",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "BOM For Customer",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n  `tabBOM Item`.parent AS BOM_ID,\n  tabBOM.item_name AS BOM_For,\n  `tabBOM Item`.item_code,\n  view_Variant.Item,\n  `tabBOM Item`.description,\n  `tabBOM Item`.supplier,\n  view_Variant.Colour,\n  view_Variant.Size,\n  `tabBOM Item`.qty,\n  `tabBOM Item`.uom,\n  `tabBOM Item`.rate,\n  `tabBOM Item`.amount\nFROM `tabBOM Item`\n  LEFT OUTER JOIN view_Variant\n    ON `tabBOM Item`.item_code = view_Variant.item_code\n  INNER JOIN tabBOM\n    ON tabBOM.name = `tabBOM Item`.parent\n  WHERE `tabBOM Item`.parent = %(bom_id)s\n  \n  ORDER BY `tabBOM Item`.idx\n   ",
+ "ref_doctype": "BOM",
+ "report_name": "BOM For Customer",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Manufacturing Manager"
+  },
+  {
+   "role": "Manufacturing User"
+  }
+ ]
+}
