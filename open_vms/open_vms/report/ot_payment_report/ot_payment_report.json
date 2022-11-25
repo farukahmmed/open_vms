@@ -1,0 +1,47 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2022-11-19 16:45:47.217293",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee ID",
+   "mandatory": 1,
+   "options": "Employee",
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Panam Logistics Ltd.",
+ "modified": "2022-11-19 17:35:58.421278",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "OT Payment Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n  view_ot_hour.name,\n  view_ot_hour.employee,\n  view_ot_hour.employee_name,\n  view_ot_hour.working_hours,\n  view_ot_hour.status,\n  view_ot_hour.department,\n  view_ot_hour.shift,\n  view_ot_hour.attendance_date,\n  view_ot_hour.base as gross,\n view_ot_hour.ot_time,\nHOUR(ot_time) AS ot_hour,\n  minute(ot_time) AS ot_minute,\n\n  ROUND( minute(ot_time)/45,0) AS ot_minute_round,\n  (HOUR(ot_time) +  ROUND( minute(ot_time)/45,0)) AS total_ot_hour,\n\nROUND(((BASE-1800)/1.5)/104,2) AS ot_rate,\n   \n round((HOUR(ot_time) +  ROUND( minute(ot_time)/45,0))*(((BASE-1800)/1.5)/104),0) as ot_amount\nFROM view_ot_hour\nwhere view_ot_hour.employee=%(employee_id)s and\n view_ot_hour.attendance_date BETWEEN %(from_date)s AND %(to_date)s\n",
+ "ref_doctype": "Employee",
+ "report_name": "OT Payment Report",
+ "report_type": "Query Report",
+ "roles": []
+}
