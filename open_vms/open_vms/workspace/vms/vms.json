@@ -120,7 +120,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "REPORTS",
-   "link_count": 2,
+   "link_count": 3,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -143,9 +143,19 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Document Renewed",
+   "link_count": 0,
+   "link_to": "vms_Document_Renewed",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-10-02 11:21:31.377510",
+ "modified": "2022-12-01 13:28:55.564833",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "VMS",

@@ -2,29 +2,29 @@
  "actions": [],
  "allow_copy": 1,
  "allow_rename": 1,
- "creation": "2022-11-22 12:44:56.769469",
+ "creation": "2022-11-28 10:22:42.202532",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "report_opened_in_another_window"
+  "report_opened_in_popup_window"
  ],
  "fields": [
   {
-   "fieldname": "report_opened_in_another_window",
+   "fieldname": "report_opened_in_popup_window",
    "fieldtype": "Heading",
-   "label": "Report Opened in another Window"
+   "label": "Report opened in popup window..."
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-11-22 12:44:56.769469",
+ "modified": "2022-11-28 10:30:10.971788",
  "modified_by": "Administrator",
  "module": "Open VMS",
- "name": "OT Sheet",
+ "name": "Leave Application Report",
  "owner": "Administrator",
  "permissions": [
   {
