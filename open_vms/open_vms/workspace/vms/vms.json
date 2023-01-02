@@ -146,7 +146,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Document Renewed",
    "link_count": 0,
    "link_to": "vms_Document_Renewed",
@@ -155,7 +155,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-12-01 13:28:55.564833",
+ "modified": "2022-12-04 12:56:50.517048",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "VMS",
