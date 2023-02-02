@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-01-29 10:41:57.774669",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lc_number",
+  "lc_mode",
+  "lc_date",
+  "shipment_date",
+  "expire_date",
+  "bank_name",
+  "column_break_7",
+  "lc_value",
+  "currency",
+  "document_status",
+  "cnfname",
+  "factory_received",
+  "remarks",
+  "file_number",
+  "pi_entry_section",
+  "pi"
+ ],
+ "fields": [
+  {
+   "fieldname": "lc_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LC Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lc_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "LC Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pi",
+   "fieldtype": "Table",
+   "label": "PI",
+   "options": "PI Attach"
+  },
+  {
+   "fieldname": "lc_mode",
+   "fieldtype": "Select",
+   "in_global_search": 1,
+   "label": "LC Mode",
+   "options": "\nAt Site LC\nAt Site TT\nAdvanced TT\nAt  sight EDF\n30 Days Deferred\n60 Days Deferred\n90 Days Deferred\n120 Days Deferred"
+  },
+  {
+   "fieldname": "shipment_date",
+   "fieldtype": "Date",
+   "label": "Shipment Date"
+  },
+  {
+   "fieldname": "expire_date",
+   "fieldtype": "Date",
+   "label": "Expire Date"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Link",
+   "label": "Bank Name",
+   "options": "Bank"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lc_value",
+   "fieldtype": "Float",
+   "label": "LC Value"
+  },
+  {
+   "default": "USD",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "document_status",
+   "fieldtype": "Data",
+   "label": "Document Status"
+  },
+  {
+   "fieldname": "cnfname",
+   "fieldtype": "Data",
+   "label": "CNF Name"
+  },
+  {
+   "fieldname": "factory_received",
+   "fieldtype": "Date",
+   "label": "Factory Received"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "file_number",
+   "fieldtype": "Data",
+   "label": "File Number"
+  },
+  {
+   "fieldname": "pi_entry_section",
+   "fieldtype": "Section Break",
+   "label": "LINK PI:"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-31 11:32:47.873840",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "LC Entry",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Commercial Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Commercial User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "lc_number"
+}

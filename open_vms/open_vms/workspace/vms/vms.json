@@ -8,6 +8,7 @@
  "hide_custom": 0,
  "icon": "setting-gear",
  "idx": 0,
+ "is_hidden": 0,
  "label": "VMS",
  "links": [
   {
@@ -155,7 +156,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-12-04 12:56:50.517048",
+ "modified": "2023-01-29 11:25:28.866634",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "VMS",
@@ -164,7 +165,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 30.0,
+ "sequence_id": 34.0,
  "shortcuts": [],
  "title": "VMS"
 }

@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-01-29 14:43:01.709396",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pi_id",
+  "pi_number",
+  "pi_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "pi_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PI ID",
+   "options": "PI Entry",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "pi_id.pi_number",
+   "fieldname": "pi_number",
+   "fieldtype": "Data",
+   "label": "PI Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "pi_id.pi_value",
+   "fieldname": "pi_value",
+   "fieldtype": "Data",
+   "label": "PI Value",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-29 16:08:18.457921",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "PI Attach",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

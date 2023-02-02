@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-01-29 10:19:01.945381",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pi_number",
+  "pi_date",
+  "po_number",
+  "supplier_name",
+  "pi_value",
+  "currency",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "pi_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PI Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pi_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "PI Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "po_number",
+   "fieldtype": "Link",
+   "label": "PO Number",
+   "options": "Purchase Order"
+  },
+  {
+   "fetch_from": "po_number.supplier",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pi_value",
+   "fieldtype": "Float",
+   "label": "PI Value"
+  },
+  {
+   "default": "USD",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-31 11:30:36.542710",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "PI Entry",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Commercial Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Commercial User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "pi_number"
+}

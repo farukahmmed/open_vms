@@ -1,0 +1,39 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-01-29 16:33:39.752477",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date (LC)",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date (LC)",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Panam Logistics Ltd.",
+ "modified": "2023-01-29 16:46:44.651707",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "LC Satus",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n  `tabLC Entry`.lc_number,\n  `tabLC Entry`.lc_date,\n  `tabLC Entry`.lc_mode,\n  `tabLC Entry`.shipment_date,\n  `tabLC Entry`.expire_date,\n  `tabLC Entry`.bank_name,\n  `tabLC Entry`.lc_value,\n  `tabLC Entry`.currency,\n  `tabLC Entry`.document_status,\n  `tabLC Entry`.cnfname,\n  `tabLC Entry`.factory_received,\n  `tabPI Entry`.pi_number,\n  `tabPI Entry`.pi_date,\n  `tabPI Entry`.po_number,\n  `tabPI Entry`.supplier_name,\n  `tabPI Entry`.pi_value,\n  `tabPI Entry`.currency,\n  `tabLC Entry`.remarks\nFROM `tabLC Entry`\n  INNER JOIN `tabPI Attach`\n    ON `tabLC Entry`.name = `tabPI Attach`.parent\n  INNER JOIN `tabPI Entry`\n    ON `tabPI Attach`.pi_id = `tabPI Entry`.name\n    WHERE `tabLC Entry`.lc_date BETWEEN %(from_date)s AND %(to_date)s\n   ORDER BY `tabLC Entry`.lc_number",
+ "ref_doctype": "LC Entry",
+ "report_name": "LC Satus",
+ "report_type": "Query Report",
+ "roles": []
+}
