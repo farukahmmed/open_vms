@@ -24,7 +24,7 @@
   {
    "fieldname": "employee_id",
    "fieldtype": "Link",
-   "label": "Shift",
+   "label": "Employee ",
    "mandatory": 1,
    "options": "Employee",
    "wildcard_filter": 0
@@ -33,7 +33,7 @@
  "idx": 0,
  "is_standard": "Yes",
  "letter_head": "Panam Logistics Ltd.",
- "modified": "2023-02-14 13:51:56.583142",
+ "modified": "2023-02-14 14:16:37.458940",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "OT Payment Report",
