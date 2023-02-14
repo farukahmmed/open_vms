@@ -20,18 +20,26 @@
    "label": "To Date",
    "mandatory": 1,
    "wildcard_filter": 0
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Shift",
+   "mandatory": 1,
+   "options": "Employee",
+   "wildcard_filter": 0
   }
  ],
  "idx": 0,
  "is_standard": "Yes",
  "letter_head": "Panam Logistics Ltd.",
- "modified": "2023-02-13 15:05:20.002514",
+ "modified": "2023-02-14 13:51:56.583142",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "OT Payment Report",
  "owner": "Administrator",
  "prepared_report": 0,
- "query": "SELECT\n  view_ot_hour.name,\n  view_ot_hour.employee,\n  view_ot_hour.employee_name,\n  view_ot_hour.working_hours,\n  view_ot_hour.status,\n  view_ot_hour.department,\n  view_ot_hour.shift,\n  view_ot_hour.attendance_date,\n  view_ot_hour.base as gross,\n view_ot_hour.ot_time,\nHOUR(ot_time) AS ot_hour,\n  minute(ot_time) AS ot_minute,\n\n  ROUND( minute(ot_time)/45,0) AS ot_minute_round,\n  (HOUR(ot_time) +  ROUND( minute(ot_time)/45,0)) AS total_ot_hour,\n\nROUND(((BASE-1800)/1.5)/104,2) AS ot_rate,\n   \n round((HOUR(ot_time) +  ROUND( minute(ot_time)/45,0))*(((BASE-1800)/1.5)/104),0) as ot_amount\nFROM view_ot_hour\nwhere \n view_ot_hour.attendance_date BETWEEN %(from_date)s AND %(to_date)s\n",
+ "query": "SELECT\n  view_ot_hour.employee as employee_id,\n  view_ot_hour.employee_name,\n  view_ot_hour.working_hours,\n  view_ot_hour.status,\n  view_ot_hour.department,\n  view_ot_hour.shift,\n  view_ot_hour.attendance_date,\n  view_ot_hour.base as gross,\n view_ot_hour.ot_time,\nHOUR(ot_time) AS ot_hour,\n  minute(ot_time) AS ot_minute,\n\nif ( minute(ot_time)>=45,1,0) AS minute_to_hour,\n ( HOUR(ot_time)  + if( minute(ot_time)>=45,1,0)) AS total_ot_hour,\n\nROUND(((BASE-1800)/1.5)/104,2) AS ot_rate,\n   \nround((HOUR(ot_time) + (if( minute(ot_time)>=45,1,0)))*round(((BASE-1800)/1.5)/104,2),0) as ot_amount\nFROM `view_ot_hour`\nwhere \n (view_ot_hour.attendance_date BETWEEN %(from_date)s AND %(to_date)s) and  view_ot_hour.employee= %(employee_id)s\n",
  "ref_doctype": "Employee",
  "report_name": "OT Payment Report",
  "report_type": "Query Report",
