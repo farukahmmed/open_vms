@@ -33,7 +33,7 @@
  "idx": 0,
  "is_standard": "Yes",
  "letter_head": "Panam Logistics Ltd.",
- "modified": "2023-02-14 14:16:37.458940",
+ "modified": "2023-02-14 14:23:20.087788",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "OT Payment Report",
@@ -43,5 +43,18 @@
  "ref_doctype": "Employee",
  "report_name": "OT Payment Report",
  "report_type": "Query Report",
- "roles": []
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  }
+ ]
 }
