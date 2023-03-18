@@ -2,7 +2,7 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Loan Deduction', {
-	vbefore_save: function(frm) {
+	validate: function(frm) {
 
 		var dDate=new Date(frm.doc.date)
 		var dMonth=dDate.getMonth()+1
