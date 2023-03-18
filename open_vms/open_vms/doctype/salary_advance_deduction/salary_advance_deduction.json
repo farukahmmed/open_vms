@@ -1,6 +1,5 @@
 {
  "actions": [],
- "autoname": "autoincrement",
  "creation": "2023-03-18 11:19:19.903835",
  "default_view": "List",
  "doctype": "DocType",
@@ -60,11 +59,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-18 16:44:28.783117",
+ "modified": "2023-03-18 18:07:36.703016",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Salary Advance Deduction",
- "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {

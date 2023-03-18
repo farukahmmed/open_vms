@@ -1,6 +1,5 @@
 {
  "actions": [],
- "autoname": "autoincrement",
  "creation": "2023-03-18 10:52:35.856131",
  "default_view": "List",
  "doctype": "DocType",
@@ -60,11 +59,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-18 16:45:04.034081",
+ "modified": "2023-03-18 18:05:27.815736",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Lunch Deduction",
- "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {

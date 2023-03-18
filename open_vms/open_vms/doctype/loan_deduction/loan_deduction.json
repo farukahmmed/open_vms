@@ -1,6 +1,5 @@
 {
  "actions": [],
- "autoname": "autoincrement",
  "creation": "2023-03-18 11:18:41.115903",
  "default_view": "List",
  "doctype": "DocType",
@@ -60,11 +59,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-18 16:43:38.368391",
+ "modified": "2023-03-18 18:08:22.316920",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Loan Deduction",
- "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
