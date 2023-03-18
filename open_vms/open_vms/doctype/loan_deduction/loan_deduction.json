@@ -11,7 +11,8 @@
   "employee_name",
   "date",
   "amount",
-  "remarks"
+  "remarks",
+  "unique_id"
  ],
  "fields": [
   {
@@ -47,11 +48,19 @@
    "fieldname": "remarks",
    "fieldtype": "Data",
    "label": "Remarks"
+  },
+  {
+   "fieldname": "unique_id",
+   "fieldtype": "Data",
+   "label": "Unique ID",
+   "read_only": 1,
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-18 11:18:41.115903",
+ "modified": "2023-03-18 16:05:44.489364",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Loan Deduction",
