@@ -13,6 +13,7 @@
   "uom",
   "rate",
   "total",
+  "life",
   "remarks"
  ],
  "fields": [
@@ -65,12 +66,17 @@
    "fieldname": "remarks",
    "fieldtype": "Data",
    "label": "Remarks"
+  },
+  {
+   "fieldname": "life",
+   "fieldtype": "Int",
+   "label": "Life(KM)"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-05-04 11:29:40.852149",
+ "modified": "2023-05-05 13:24:01.609808",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "vms_Voucher_Entry_Detail",
