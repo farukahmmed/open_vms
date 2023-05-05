@@ -15,4 +15,5 @@ frappe.ui.form.on('Advance Deduction Entry', {
 		frm.set_value('unique_id', id_field); // set the value of the unique id field
 		
 	}
+	
 });

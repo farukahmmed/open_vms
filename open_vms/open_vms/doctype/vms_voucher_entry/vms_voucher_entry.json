@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "creation": "2023-05-02 18:00:46.256891",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "voucher_date",
+  "license_number",
+  "company_name",
+  "current_meter_reading",
+  "previous_meter_reading",
+  "meter_reading_difference",
+  "column_break_tk1lv",
+  "driver_id",
+  "driver_name",
+  "user_name",
+  "supplier_name",
+  "supplier_reference_no",
+  "section_break_sw4jk",
+  "voucher_entry_detail",
+  "section_break_phyhr",
+  "column_break_vitps",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "license_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "License Number",
+   "options": "vms_Vehicle_Entry",
+   "reqd": 1
+  },
+  {
+   "fieldname": "voucher_date",
+   "fieldtype": "Date",
+   "label": "Voucher Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "license_number.company_name",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_meter_reading",
+   "fieldtype": "Int",
+   "label": "Current Meter Reading",
+   "reqd": 1
+  },
+  {
+   "fieldname": "previous_meter_reading",
+   "fieldtype": "Int",
+   "label": "Previous Meter Reading",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "driver_id.full_name",
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name"
+  },
+  {
+   "fieldname": "supplier_reference_no",
+   "fieldtype": "Data",
+   "label": "Supplier Reference No"
+  },
+  {
+   "fieldname": "column_break_tk1lv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "voucher_entry_detail",
+   "fieldtype": "Table",
+   "label": "Voucher Entry Detail",
+   "options": "vms_Voucher_Entry_Detail",
+   "reqd": 1
+  },
+  {
+   "fieldname": "meter_reading_difference",
+   "fieldtype": "Int",
+   "label": "Meter Reading Difference",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_sw4jk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier Name",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "driver_id",
+   "fieldtype": "Link",
+   "label": "Driver ID",
+   "options": "Driver"
+  },
+  {
+   "fieldname": "section_break_phyhr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vitps",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-04 17:46:28.467208",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "vms_Voucher_Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "VMS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "VMS User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "license_number",
+ "track_changes": 1
+}
