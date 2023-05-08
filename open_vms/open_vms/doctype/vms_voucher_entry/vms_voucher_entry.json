@@ -44,6 +44,7 @@
    "fieldname": "company_name",
    "fieldtype": "Data",
    "label": "Company Name",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -127,7 +128,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-04 17:46:28.467208",
+ "modified": "2023-05-07 12:17:35.673833",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "vms_Voucher_Entry",
