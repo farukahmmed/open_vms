@@ -2,11 +2,41 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('vms_Voucher_Entry', {
+	
+	current_meter_reading: function(frm) {
+
+		// calculate meter reading difference
+				var meter_diff= frm.doc.current_meter_reading-frm.doc.previous_meter_reading// get the value of the id field
+				frm.set_value('meter_reading_difference', meter_diff); // set the value of the unique id field
+
+				if (meter_diff < 0) {
+					frappe.msgprint('Meter Reading Difference must be greater than or equal to 0');
+					validated = false; // Cancel form submission if needed
+				}
+	},
+	
+	previous_meter_reading: function(frm) {
+
+		// calculate meter reading difference
+				var meter_diff= frm.doc.current_meter_reading-frm.doc.previous_meter_reading// get the value of the id field
+				frm.set_value('meter_reading_difference', meter_diff); // set the value of the unique id field
+
+				if (meter_diff < 0) {
+					frappe.msgprint('Meter Reading Difference must be greater than or equal to 0');
+					validated = false; // Cancel form submission if needed
+				}
+	},
+	
+	
 	validate: function(frm) {
 
-// calculate meter reading difference
-		var meter_diff= frm.doc.current_meter_reading-frm.doc.previous_meter_reading// get the value of the id field
-		frm.set_value('meter_reading_difference', meter_diff); // set the value of the unique id field
+// validate meter reading difference
+		
+		if (frm.doc.meter_reading_difference < 0) {
+			frappe.msgprint('Meter Reading Difference must be greater than or equal to 0');
+			validated = false; // Cancel form submission if needed
+		}
+
 		
 // calculate 'total amount' and 'total' in parent and child doc
 
@@ -21,8 +51,6 @@ frappe.ui.form.on('vms_Voucher_Entry', {
     obj.total=amount
 				}
 				frm.set_value("total_amount",sum)
-
-	
-	
 }
+
 });
