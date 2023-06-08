@@ -62,13 +62,14 @@
    "fieldname": "unique_id",
    "fieldtype": "Data",
    "label": "Unique ID",
+   "read_only": 1,
    "reqd": 1,
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-08 11:56:16.263177",
+ "modified": "2023-06-08 13:18:43.063203",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "vms_Mileage_Entry",
