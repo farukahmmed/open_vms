@@ -121,7 +121,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "VMS",
-   "link_count": 4,
+   "link_count": 5,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -164,9 +164,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Mileage Entry",
+   "link_count": 0,
+   "link_to": "vms_Mileage_Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-05-04 16:55:09.319784",
+ "modified": "2023-06-08 11:45:09.659667",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "VMS",

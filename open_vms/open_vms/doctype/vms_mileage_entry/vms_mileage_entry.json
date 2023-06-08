@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "creation": "2023-06-08 11:20:39.283491",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "entry_date",
+  "license_number",
+  "current_meter_reading",
+  "previous_meter_reading",
+  "mileage",
+  "unique_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "license_number",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "License Number",
+   "options": "vms_Vehicle_Entry",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_meter_reading",
+   "fieldtype": "Int",
+   "label": "Current Meter Reading",
+   "reqd": 1
+  },
+  {
+   "fieldname": "previous_meter_reading",
+   "fieldtype": "Int",
+   "label": "Previous Meter Reading",
+   "reqd": 1
+  },
+  {
+   "fieldname": "entry_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Entry Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mileage",
+   "fieldtype": "Int",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Mileage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "unique_id",
+   "fieldtype": "Data",
+   "label": "Unique ID",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-08 11:56:16.263177",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "vms_Mileage_Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "VMS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "VMS User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "license_number",
+ "track_changes": 1
+}
