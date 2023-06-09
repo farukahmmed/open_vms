@@ -10,6 +10,7 @@
   "license_number",
   "current_meter_reading",
   "previous_meter_reading",
+  "get_previous_reading",
   "mileage",
   "unique_id"
  ],
@@ -29,12 +30,14 @@
   {
    "fieldname": "current_meter_reading",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Current Meter Reading",
    "reqd": 1
   },
   {
    "fieldname": "previous_meter_reading",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Previous Meter Reading",
    "reqd": 1
   },
@@ -65,11 +68,16 @@
    "read_only": 1,
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "get_previous_reading",
+   "fieldtype": "Button",
+   "label": "Get Previous Reading"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-08 13:18:43.063203",
+ "modified": "2023-06-09 11:15:40.022642",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "vms_Mileage_Entry",
