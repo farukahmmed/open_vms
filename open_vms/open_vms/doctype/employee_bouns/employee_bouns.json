@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "autoname": "format:{bonus_id}",
+ "creation": "2023-06-10 12:21:21.803952",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bonus_id",
+  "bonus_for",
+  "religion",
+  "effective_date",
+  "column_break_q0dkn",
+  "effective_days",
+  "effective_days_end",
+  "percentage",
+  "generate_bonus",
+  "section_break_yvqhk",
+  "bonus_detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "bonus_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bonus ID",
+   "options": "Employee Bonus Setting",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fetch_from": "bonus_id.effective_days",
+   "fieldname": "effective_days",
+   "fieldtype": "Int",
+   "label": "Effective Days",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "bonus_id.percentage",
+   "fieldname": "percentage",
+   "fieldtype": "Int",
+   "label": "Percentage",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "bonus_id.festival",
+   "fieldname": "bonus_for",
+   "fieldtype": "Data",
+   "label": "Bonus for",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "generate_bonus",
+   "fieldtype": "Button",
+   "label": "Generate Bonus"
+  },
+  {
+   "fieldname": "bonus_detail",
+   "fieldtype": "Table",
+   "label": "Bonus Detail",
+   "options": "Employee Bonus Detail"
+  },
+  {
+   "fetch_from": "bonus_id.effective_days_end",
+   "fieldname": "effective_days_end",
+   "fieldtype": "Int",
+   "label": "Effective Days End",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "bonus_id.effective_date",
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "label": "Effective Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Data",
+   "label": "Religion",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_q0dkn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_yvqhk",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-19 12:47:45.951555",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "Employee Bouns",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

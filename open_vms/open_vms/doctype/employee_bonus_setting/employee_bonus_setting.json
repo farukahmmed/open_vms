@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{effective_date}:{festival}:{effective_days}:{percentage}",
+ "creation": "2023-06-10 11:01:31.583967",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "festival",
+  "religion",
+  "effective_date",
+  "effective_days",
+  "effective_days_end",
+  "percentage",
+  "processed"
+ ],
+ "fields": [
+  {
+   "fieldname": "festival",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Festival",
+   "options": "Eid\nPuja\nChristmas\nNew Year",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Effective Date",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "effective_days",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Effective Days",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Percentage",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "processed",
+   "fieldtype": "Check",
+   "label": "Processed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "effective_days_end",
+   "fieldtype": "Int",
+   "label": "Effective Days End",
+   "reqd": 1
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Table MultiSelect",
+   "label": "Religion",
+   "options": "Employee Religion Assign",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-16 15:14:57.407000",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "Employee Bonus Setting",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

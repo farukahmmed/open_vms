@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{parent}-{employee_id}",
+ "creation": "2023-06-10 12:45:16.526481",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_id",
+  "full_name",
+  "designation",
+  "department",
+  "religion",
+  "date_of_joining",
+  "relieving_date",
+  "gross_salary",
+  "salary_eff_date",
+  "bonus_eff_date",
+  "in_service_days",
+  "bonus_percentage",
+  "bonus_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining",
+   "reqd": 1
+  },
+  {
+   "fieldname": "relieving_date",
+   "fieldtype": "Date",
+   "label": "Relieving Date"
+  },
+  {
+   "fieldname": "gross_salary",
+   "fieldtype": "Int",
+   "label": "Gross Salary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "salary_eff_date",
+   "fieldtype": "Date",
+   "label": "Salary Eff Date"
+  },
+  {
+   "fieldname": "bonus_eff_date",
+   "fieldtype": "Date",
+   "label": "Bonus Eff Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "in_service_days",
+   "fieldtype": "Int",
+   "label": "In Service Days"
+  },
+  {
+   "fieldname": "bonus_percentage",
+   "fieldtype": "Int",
+   "label": "Bonus Percentage",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bonus_amount",
+   "fieldtype": "Int",
+   "label": "Bonus Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Data",
+   "label": "Religion",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-19 10:51:43.343844",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "Employee Bonus Detail",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
