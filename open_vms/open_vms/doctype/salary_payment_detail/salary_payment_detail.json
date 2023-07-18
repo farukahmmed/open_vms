@@ -1,0 +1,336 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-10 15:46:57.091038",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "start_date",
+  "end_date",
+  "employee",
+  "employee_name",
+  "bangla_full_name",
+  "bangla_designation",
+  "bangla_department",
+  "designation",
+  "department",
+  "date_of_joining",
+  "basic",
+  "house_rent",
+  "medical",
+  "food_allowance",
+  "conveyance",
+  "days_of_month",
+  "total_working_days",
+  "holiday",
+  "cl",
+  "sl",
+  "al",
+  "ml",
+  "il",
+  "spl",
+  "lwp",
+  "lout",
+  "stl",
+  "late",
+  "lwp_ded",
+  "absent_days",
+  "absent",
+  "present_days",
+  "payment_days",
+  "total_attendance",
+  "payable_days",
+  "gross_pay",
+  "tax",
+  "net_pay",
+  "signature",
+  "attendance_bonus",
+  "loan_deduction",
+  "lunch_deduction",
+  "advance_deduction",
+  "staff_category",
+  "total_ot_hour_2",
+  "ot_month",
+  "ot_rate",
+  "base",
+  "from_date",
+  "salary_mode",
+  "bank_name",
+  "bank_ac_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Data",
+   "label": "employee"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "employee_name"
+  },
+  {
+   "fieldname": "bangla_full_name",
+   "fieldtype": "Data",
+   "label": "bangla_full_name"
+  },
+  {
+   "fieldname": "bangla_designation",
+   "fieldtype": "Data",
+   "label": "bangla_designation"
+  },
+  {
+   "fieldname": "bangla_department",
+   "fieldtype": "Data",
+   "label": "bangla_department"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "designation"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "department"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "date_of_joining"
+  },
+  {
+   "fieldname": "basic",
+   "fieldtype": "Float",
+   "label": "basic"
+  },
+  {
+   "fieldname": "house_rent",
+   "fieldtype": "Float",
+   "label": "house_rent"
+  },
+  {
+   "fieldname": "medical",
+   "fieldtype": "Float",
+   "label": "medical"
+  },
+  {
+   "fieldname": "food_allowance",
+   "fieldtype": "Float",
+   "label": "food_allowance"
+  },
+  {
+   "fieldname": "conveyance",
+   "fieldtype": "Float",
+   "label": "conveyance"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "start_date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "end_date"
+  },
+  {
+   "fieldname": "days_of_month",
+   "fieldtype": "Int",
+   "label": "days_of_month"
+  },
+  {
+   "fieldname": "total_working_days",
+   "fieldtype": "Int",
+   "label": "total_working_days"
+  },
+  {
+   "fieldname": "holiday",
+   "fieldtype": "Int",
+   "label": "holiday"
+  },
+  {
+   "fieldname": "cl",
+   "fieldtype": "Int",
+   "label": "CL"
+  },
+  {
+   "fieldname": "sl",
+   "fieldtype": "Int",
+   "label": "SL"
+  },
+  {
+   "fieldname": "al",
+   "fieldtype": "Int",
+   "label": "AL"
+  },
+  {
+   "fieldname": "ml",
+   "fieldtype": "Int",
+   "label": "ML"
+  },
+  {
+   "fieldname": "il",
+   "fieldtype": "Int",
+   "label": "IL"
+  },
+  {
+   "fieldname": "spl",
+   "fieldtype": "Int",
+   "label": "SPL"
+  },
+  {
+   "fieldname": "lwp",
+   "fieldtype": "Int",
+   "label": "LWP"
+  },
+  {
+   "fieldname": "lout",
+   "fieldtype": "Int",
+   "label": "LOUT"
+  },
+  {
+   "fieldname": "stl",
+   "fieldtype": "Int",
+   "label": "STL"
+  },
+  {
+   "fieldname": "late",
+   "fieldtype": "Int",
+   "label": "late"
+  },
+  {
+   "fieldname": "lwp_ded",
+   "fieldtype": "Int",
+   "label": "LWP Ded"
+  },
+  {
+   "fieldname": "absent_days",
+   "fieldtype": "Int",
+   "label": "absent_days"
+  },
+  {
+   "fieldname": "absent",
+   "fieldtype": "Int",
+   "label": "absent"
+  },
+  {
+   "fieldname": "present_days",
+   "fieldtype": "Int",
+   "label": "present_days"
+  },
+  {
+   "fieldname": "payment_days",
+   "fieldtype": "Int",
+   "label": "payment_days"
+  },
+  {
+   "fieldname": "total_attendance",
+   "fieldtype": "Int",
+   "label": "total_attendance"
+  },
+  {
+   "fieldname": "payable_days",
+   "fieldtype": "Int",
+   "label": "payable_days"
+  },
+  {
+   "fieldname": "gross_pay",
+   "fieldtype": "Float",
+   "label": "gross_pay"
+  },
+  {
+   "fieldname": "tax",
+   "fieldtype": "Float",
+   "label": "tax"
+  },
+  {
+   "fieldname": "net_pay",
+   "fieldtype": "Float",
+   "label": "net_pay"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Data",
+   "label": "signature"
+  },
+  {
+   "fieldname": "attendance_bonus",
+   "fieldtype": "Float",
+   "label": "attendance_bonus"
+  },
+  {
+   "fieldname": "loan_deduction",
+   "fieldtype": "Float",
+   "label": "loan_deduction"
+  },
+  {
+   "fieldname": "lunch_deduction",
+   "fieldtype": "Float",
+   "label": "lunch_deduction"
+  },
+  {
+   "fieldname": "advance_deduction",
+   "fieldtype": "Float",
+   "label": "advance_deduction"
+  },
+  {
+   "fieldname": "staff_category",
+   "fieldtype": "Data",
+   "label": "staff_category"
+  },
+  {
+   "fieldname": "total_ot_hour_2",
+   "fieldtype": "Float",
+   "label": "total_ot_hour_2"
+  },
+  {
+   "fieldname": "ot_month",
+   "fieldtype": "Date",
+   "label": "ot_month"
+  },
+  {
+   "fieldname": "ot_rate",
+   "fieldtype": "Float",
+   "label": "ot_rate"
+  },
+  {
+   "fieldname": "base",
+   "fieldtype": "Float",
+   "label": "base"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "from_date"
+  },
+  {
+   "fieldname": "salary_mode",
+   "fieldtype": "Data",
+   "label": "salary_mode"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "bank_name"
+  },
+  {
+   "fieldname": "bank_ac_no",
+   "fieldtype": "Data",
+   "label": "bank_ac_no"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-17 17:57:54.804297",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "Salary Payment Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

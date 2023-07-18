@@ -19,11 +19,6 @@ def handle_religion(id):
 @frappe.whitelist()
 def handle_button_click(bonus_id,eff_date,eff_days,eff_days_end,percent,religions):	
 	
-	#str_religions = religions.split(",")  # Split the string of religions into a list
-
-    # Create a placeholder string for the IN condition
-	#placeholders = ', '.join(['%s'] * len(str_religions))
-
 	insert_query = '''INSERT INTO `tabEmployee Bonus Detail` 
 			(name, parent, parentfield, parenttype, creation, employee_id, full_name, 
 			designation, department, religion, date_of_joining, relieving_date, gross_salary, 
@@ -77,9 +72,7 @@ def handle_button_click(bonus_id,eff_date,eff_days,eff_days_end,percent,religion
 	"percent":percent,
 	"religions": religions.split(",")
 	}
-	#params.update({"religions": str_religions})
-	#params.update({"religions": str_religions})
-
+	
 	#frappe.msgprint (f"value : {params }")
 	#Execute sql
 	frappe.db.sql(insert_query, params, as_dict=True)

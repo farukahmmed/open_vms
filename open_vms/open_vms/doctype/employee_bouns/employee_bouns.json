@@ -34,6 +34,7 @@
    "fieldname": "effective_days",
    "fieldtype": "Int",
    "label": "Effective Days",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -81,6 +82,7 @@
    "fieldname": "religion",
    "fieldtype": "Data",
    "label": "Religion",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -94,7 +96,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-19 12:47:45.951555",
+ "modified": "2023-06-20 10:19:12.682100",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Employee Bouns",
