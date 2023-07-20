@@ -258,22 +258,22 @@
   },
   {
    "fieldname": "attendance_bonus",
-   "fieldtype": "Float",
+   "fieldtype": "Int",
    "label": "attendance_bonus"
   },
   {
    "fieldname": "loan_deduction",
-   "fieldtype": "Float",
+   "fieldtype": "Int",
    "label": "loan_deduction"
   },
   {
    "fieldname": "lunch_deduction",
-   "fieldtype": "Float",
+   "fieldtype": "Int",
    "label": "lunch_deduction"
   },
   {
    "fieldname": "advance_deduction",
-   "fieldtype": "Float",
+   "fieldtype": "Int",
    "label": "advance_deduction"
   },
   {
@@ -283,7 +283,7 @@
   },
   {
    "fieldname": "total_ot_hour_2",
-   "fieldtype": "Float",
+   "fieldtype": "Int",
    "label": "total_ot_hour_2"
   },
   {
@@ -323,7 +323,7 @@
   },
   {
    "fieldname": "extra_ot",
-   "fieldtype": "Float",
+   "fieldtype": "Int",
    "in_list_view": 1,
    "label": "extra_ot"
   }
@@ -331,7 +331,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-07-20 11:28:44.627140",
+ "modified": "2023-07-20 13:47:03.246538",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Salary Payment Detail",
