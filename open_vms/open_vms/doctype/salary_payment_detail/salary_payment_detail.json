@@ -57,7 +57,8 @@
   "from_date",
   "salary_mode",
   "bank_name",
-  "bank_ac_no"
+  "bank_ac_no",
+  "extra_ot"
  ],
  "fields": [
   {
@@ -319,12 +320,18 @@
    "fieldname": "bank_ac_no",
    "fieldtype": "Data",
    "label": "bank_ac_no"
+  },
+  {
+   "fieldname": "extra_ot",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "extra_ot"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-07-17 17:57:54.804297",
+ "modified": "2023-07-20 11:28:44.627140",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Salary Payment Detail",
