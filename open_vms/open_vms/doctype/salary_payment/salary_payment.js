@@ -38,7 +38,7 @@ frappe.ui.form.on('Salary Payment', {
 		// Refresh the browser
 		setTimeout(function() {
 			location.reload();
-		  }, 5000);
+		  }, 2000);
 
 		  
 	} catch (error) {
