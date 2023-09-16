@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "format:{workstation}-{operation}-{production_date}",
  "creation": "2023-09-16 10:34:17.000244",
  "default_view": "List",
@@ -47,7 +46,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-16 10:39:06.938162",
+ "modified": "2023-09-16 12:32:22.077380",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Production Target",
