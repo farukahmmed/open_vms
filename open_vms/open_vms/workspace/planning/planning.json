@@ -1,0 +1,104 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"kCsjq7qjbj\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">PLANNING</span>\",\"col\":12}},{\"id\":\"rbBtGiwZv-\",\"type\":\"card\",\"data\":{\"card_name\":\"Export Plan\",\"col\":4}}]",
+ "creation": "2022-06-27 17:52:51.059694",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "group-by",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Planning",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "REPORTS",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Renewal Required",
+   "link_count": 0,
+   "link_to": "vms_Renewal_Required",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Vehicle Allocation Summary",
+   "link_count": 0,
+   "link_to": "vms_Vehicle_Allocation_Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Document Renewed",
+   "link_count": 0,
+   "link_to": "vms_Document_Renewed",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Export Plan",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Buyer",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Production Factry",
+   "link_count": 0,
+   "link_to": "Production Factory",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Export Planning",
+   "link_count": 0,
+   "link_to": "Export Planning",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-11-07 09:53:45.524857",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "Planning",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 35.0,
+ "shortcuts": [],
+ "title": "Planning"
+}

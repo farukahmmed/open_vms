@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-11-06 14:32:03.941875",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "export_date",
+  "porduction_factory",
+  "buyer",
+  "quantity",
+  "value"
+ ],
+ "fields": [
+  {
+   "fieldname": "export_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Export Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "porduction_factory",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Porduction Factory",
+   "options": "Production Factory",
+   "reqd": 1
+  },
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Buyer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Int",
+   "label": "Value"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-07 10:06:19.814010",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "Export Planning",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
