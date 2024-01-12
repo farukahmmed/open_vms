@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-05 15:42:57.440641",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "displayemployeecode",
+  "employeename",
+  "nickname"
+ ],
+ "fields": [
+  {
+   "fieldname": "displayemployeecode",
+   "fieldtype": "Data",
+   "label": "DisplayEmployeeCode"
+  },
+  {
+   "fieldname": "employeename",
+   "fieldtype": "Data",
+   "label": "EmployeeName"
+  },
+  {
+   "fieldname": "nickname",
+   "fieldtype": "Data",
+   "label": "NickName"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-05 15:42:57.440641",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "emp_info",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

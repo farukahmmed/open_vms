@@ -17,7 +17,9 @@ def handle_religion(id):
 	return religion_list
 
 @frappe.whitelist()
-def handle_button_click(bonus_id,eff_date,eff_days,eff_days_end,percent,religions):	
+def handle_button_click(bonus_id,eff_date,eff_days,eff_days_end,percent,religions):
+    
+	
 	
 	insert_query = '''INSERT INTO `tabEmployee Bonus Detail` 
 			(name, parent, parentfield, parenttype, creation, employee_id, full_name, 

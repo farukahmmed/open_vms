@@ -4,6 +4,7 @@
 frappe.ui.form.on('Employee Bouns', {
 	
 	generate_bonus: function(frm) {
+		
 		try {
 			var bonus_id=frm.doc.bonus_id;
 			var eff_date=frm.doc.effective_date;
@@ -70,7 +71,7 @@ frappe.ui.form.on('Employee Bouns', {
 				var data = response.message;
 				//Convert Json to text
 				var data_text=JSON.stringify(data);
-				//Trim bracket for data_text
+				//Trim bracket from data_text
 				//frappe.msgprint("Religion: "+ data_text);
 				var trimmed = data_text.substring(3, data_text.length - 3);
 				frm.set_value('religion',trimmed);
