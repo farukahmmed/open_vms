@@ -11,6 +11,7 @@
   "get_data",
   "name1",
   "image",
+  "image_url",
   "employee_info"
  ],
  "fields": [
@@ -39,11 +40,16 @@
    "fieldname": "get_data",
    "fieldtype": "Button",
    "label": "Get Data"
+  },
+  {
+   "fieldname": "image_url",
+   "fieldtype": "Data",
+   "label": "Image URL"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-06 16:38:18.499676",
+ "modified": "2024-01-20 17:11:37.472925",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "get_odbc_data",

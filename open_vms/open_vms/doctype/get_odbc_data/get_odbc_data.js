@@ -3,74 +3,52 @@
 
 frappe.ui.form.on('get_odbc_data', {
 
-	xget_data: function (frm) {
-        // Add a button to fetch data
-        //frm.add_custom_button(__('Fetch Data'), function () {
+	get_data: function(frm) {
 
-			try{
-                console.log ("---hi----");
+        try{  
 
-            frappe.call({
-                method: 'open_vms.open_vms.doctype.get_odbc_data.get_odbc_data.get_data_from_sql_server',
-                args: {},
-                
-                callback: function(response) {
-                    /// Update the custom fields with the SQL result
-                    console.log("---hi----2");
-
-                    // Display the message directly in the browser using frappe.msgprint
-                    frappe.msgprint(response.message);
-
-                    // If you have data to process, you can access it using response.data
-                    if (response.data && response.data.length > 0) {
-                        console.log("Data:", response.data);
-                    }
-                }
-            });
-            console.log("---hi----4");
-
-        } catch (error) {
-            // Log the error details to the console
-            console.error("An error occurred: " + error.message);
-        }
-    },
-
-    get_data: function(frm) {
-
-        //try{
-        console.log ("---hi----");
+        var emp_id=frm.doc.emp_id;
+        //frappe.msgprint(str(emp_id));
 
         frappe.call({
             method: 'open_vms.open_vms.doctype.get_odbc_data.get_odbc_data.handle_show_msg',
             args: {
-
+            emp_id:emp_id   
            },
-			callback: function(response) {
+           callback: function (r) {
+            
+            let json_string=r.message;
+           // Parse the JSON string to a JavaScript object (array in this case)
+            let json_data = JSON.parse(json_string);
 
-                var data=response.message
-                console.log("Server Response:", response);
-                //Convert Json to text
-				var data_text=JSON.stringify(data);
-                frappe.msgprint("data: "+data_text);
-				// Check if the operation was successful
-                //if (response.message === "Success") {
-                    if (data_text==="Success"){
-                    // Display a success message
-                    frappe.msgprint("Operation successful!");
-        
-                    // If there is any data, process it
-                    if (data_text && data_text.length > 0) {
-                        console.log("Data:", data_text);
-                        // Do something with the data
-                    }
-                } else {
-                    // Display an error message if the operation failed
-                    frappe.msgprint("Operation failed: " + data_text);
-                }
-            }
+            // Access the 'EmployeeName' value from the first object in the array
+            let employee_name = json_data[0].EmployeeName;
+            var data_text=JSON.stringify(employee_name);
+            // Remove quotation marks
+            let employeeNameWithoutQuotes = employee_name.replace(/"/g, '');
+
+            // Access the 'Employee Image' value from the first object in the array
+            let emp_image = json_data[0].EmpImage;
+            var data_text=JSON.stringify(emp_image);
+            // Remove quotation marks
+            let emp_image_WithoutQuotes = emp_image.replace(/"/g, '');
+
+            console.log(emp_image_WithoutQuotes);
+            frappe.msgprint("Name: "+ emp_image_WithoutQuotes);
+
+            // Set the 'EmployeeName' to the 'name1' field
+            frm.set_value('name1',employeeNameWithoutQuotes);
+
+            // Set the 'emp image' to the 'image' field
+            frm.set_value('image',emp_image_WithoutQuotes);
+            
+                        }
 			});
 
         
+    } catch (error) {
+        // Log the error details to the console
+        console.error("An error occurred: " + error.message);
     }
 
-});
+}});

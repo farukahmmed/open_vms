@@ -26,6 +26,12 @@
    "width": 200
   },
   {
+   "fieldname": "item_group",
+   "fieldtype": "Data",
+   "label": "Item Group",
+   "width": 0
+  },
+  {
    "fieldname": "qty",
    "fieldtype": "Float",
    "label": "Qty",
@@ -65,13 +71,13 @@
  "idx": 0,
  "is_standard": "Yes",
  "letter_head": "Panam Logistics Ltd.",
- "modified": "2022-09-26 14:01:29.659251",
+ "modified": "2024-01-25 15:29:58.800816",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Sales Order by Delivery Date",
  "owner": "Administrator",
  "prepared_report": 0,
- "query": "SELECT\n  so.company,\n  so.customer,\n  so.name AS sales_order,\n  soi.item_code,\n  soi.qty,\n  soi.rate,\n  soi.amount,\n  soi.delivery_date AS delivery_date,\n  so.status\nFROM `tabSales Order Item` soi\n  INNER JOIN `tabSales Order` so\n    ON so.name = soi.parent\nWHERE soi.parent = so.name\nAND so.status NOT IN ('Stopped', 'Closed', 'On Hold')\nAND so.docstatus = 1\nAND soi.delivery_date BETWEEN %(from_date)s AND %(to_date)s\nORDER BY so.customer,so.name, soi.item_code\n\n\n\n",
+ "query": "SELECT\n  so.company,\n  so.customer,\n  so.name AS sales_order,\n  soi.item_code,\n  soi.item_group,\n  soi.qty,\n  soi.rate,\n  soi.amount,\n  soi.delivery_date AS delivery_date,\n  so.status\nFROM `tabSales Order Item` soi\n  INNER JOIN `tabSales Order` so\n    ON so.name = soi.parent\nWHERE soi.parent = so.name\nAND so.status NOT IN ('Stopped', 'Closed', 'On Hold')\nAND so.docstatus = 1\nAND soi.delivery_date BETWEEN %(from_date)s AND %(to_date)s\nORDER BY so.customer,so.name, soi.item_code\n\n\n\n",
  "ref_doctype": "Sales Order",
  "report_name": "Sales Order by Delivery Date",
  "report_type": "Query Report",
