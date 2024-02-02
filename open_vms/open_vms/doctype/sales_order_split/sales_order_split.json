@@ -1,0 +1,106 @@
+{
+ "_assign": "[\"faruk@metrokd.com\", \"mehedi@metrokd.com\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:sales_order_id",
+ "creation": "2024-01-30 16:19:50.396057",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_order_id",
+  "customer_name",
+  "sales_order_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "sales_order_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order ID",
+   "options": "Sales Order",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "sales_order_id.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "sales_order_item",
+   "fieldtype": "Table",
+   "label": "Sales Order Item",
+   "options": "Sales Order Item Split",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-01 18:09:56.191322",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "Sales Order Split",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Master Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
