@@ -14,7 +14,7 @@
    "width": 0
   },
   {
-   "fieldname": "name",
+   "fieldname": "sales_order",
    "fieldtype": "Data",
    "label": "Sales Order",
    "width": 0
@@ -71,13 +71,13 @@
  "idx": 0,
  "is_standard": "Yes",
  "letter_head": "Panam Logistics Ltd.",
- "modified": "2024-02-01 17:40:11.333256",
+ "modified": "2024-02-05 11:54:10.002968",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Sales Order by Delivery Date",
  "owner": "Administrator",
  "prepared_report": 0,
- "query": "SELECT\n  so.company,\n  so.customer,\n  so.name AS sales_order,\n  soi.item_code,\n  soi.item_group,\n  soi.qty AS old_qty,\n  soi.rate AS old_rate,\n  soi.amount AS old_amount,\n  soi.delivery_date AS old_delivery_date,\n  so.status,\n  soi.name,\n  sois.item_id,\n  COALESCE(sois.delivery_date, soi.delivery_date) AS delivery_date,\n COALESCE( sois.quantity,soi.qty) AS qty,\n COALESCE( sois.item_rate,soi.rate) AS rate,\n COALESCE( sois.quantity,soi.qty)* COALESCE( sois.item_rate,soi.rate) as amount\n\nFROM `tabSales Order Item` soi\n  INNER JOIN `tabSales Order` so\n    ON so.name = soi.parent\n    AND soi.parent = so.name\n  LEFT OUTER JOIN `tabSales Order Item Split` sois\n    ON soi.name = sois.item_id\nWHERE so.status NOT IN ('Stopped', 'Closed', 'On Hold')\nAND so.docstatus = 1\nAND COALESCE(sois.delivery_date, soi.delivery_date) BETWEEN %(from_date)s AND %(to_date)s\nORDER BY so.customer,so.name, soi.item_code\n\n\n\n",
+ "query": "SELECT\n  company,\n  customer,\n  sales_order,\n  item_code,\n  item_group,\n  qty,\n  rate,\n  amount,\n  delivery_date,\n  status\n\n\nFROM view_sales_order_detail\n\nWHERE delivery_date BETWEEN %(from_date)s AND %(to_date)s\nORDER BY customer,sales_order, item_code\n\n\n\n",
  "ref_doctype": "Sales Order",
  "report_name": "Sales Order by Delivery Date",
  "report_type": "Query Report",
