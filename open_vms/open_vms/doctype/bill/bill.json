@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{YYYY}-{######}",
+ "creation": "2024-07-28 15:34:53.231760",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "bill_date",
+  "vehicle_number",
+  "company",
+  "customer",
+  "customer_referance",
+  "amount",
+  "column_break_fauj",
+  "trip_purpose",
+  "from_district",
+  "from_location",
+  "to_district",
+  "to_loacation",
+  "item_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "bill_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Bill Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "vehicle_number.company_name",
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "company",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle Number",
+   "options": "vms_Vehicle_Entry",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_referance",
+   "fieldtype": "Data",
+   "label": "Customer Referance"
+  },
+  {
+   "fieldname": "trip_purpose",
+   "fieldtype": "Select",
+   "label": "Trip Purpose",
+   "options": "Export\nImport\nLocal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_district",
+   "fieldtype": "Select",
+   "label": "From District",
+   "options": "Dhaka\nFaridpur\nGazipur\nGopalganj\nJamalpur\nKishoreganj\nMadaripur\nManikganj\nMunshiganj\nMymensingh\nNarayanganj\nNarsingdi\nNetrokona\nRajbari\nShariatpur\nSherpur\nTangail\nBogra\nJoypurhat\nNaogaon\nNatore\nNawabganj\nPabna\nRajshahi\nSirajgonj\nDinajpur\nGaibandha\nKurigram\nLalmonirhat\nNilphamari\nPanchagarh\nRangpur\nThakurgaon\nBarguna\nBarisal\nBhola\nJhalokati\nPatuakhali\nPirojpur\nBandarban\nBrahmanbaria\nChandpur\nChittagong\nComilla\nCox''s Bazar\nFeni\nKhagrachari\nLakshmipur\nNoakhali\nRangamati\nHabiganj\nMaulvibazar\nSunamganj\nSylhet\nBagerhat\nChuadanga\nJessore\nJhenaidah\nKhulna\nKushtia\nMagura\nMeherpur\nNarail\nSatkhir",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_location",
+   "fieldtype": "Data",
+   "label": "From Location"
+  },
+  {
+   "fieldname": "to_district",
+   "fieldtype": "Select",
+   "label": "To District",
+   "options": "Dhaka\nFaridpur\nGazipur\nGopalganj\nJamalpur\nKishoreganj\nMadaripur\nManikganj\nMunshiganj\nMymensingh\nNarayanganj\nNarsingdi\nNetrokona\nRajbari\nShariatpur\nSherpur\nTangail\nBogra\nJoypurhat\nNaogaon\nNatore\nNawabganj\nPabna\nRajshahi\nSirajgonj\nDinajpur\nGaibandha\nKurigram\nLalmonirhat\nNilphamari\nPanchagarh\nRangpur\nThakurgaon\nBarguna\nBarisal\nBhola\nJhalokati\nPatuakhali\nPirojpur\nBandarban\nBrahmanbaria\nChandpur\nChittagong\nComilla\nCox''s Bazar\nFeni\nKhagrachari\nLakshmipur\nNoakhali\nRangamati\nHabiganj\nMaulvibazar\nSunamganj\nSylhet\nBagerhat\nChuadanga\nJessore\nJhenaidah\nKhulna\nKushtia\nMagura\nMeherpur\nNarail\nSatkhir",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_loacation",
+   "fieldtype": "Data",
+   "label": "To Location"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fauj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_description",
+   "fieldtype": "Data",
+   "label": "Item Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-29 17:42:11.690860",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "Bill",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "VMS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "VMS User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
