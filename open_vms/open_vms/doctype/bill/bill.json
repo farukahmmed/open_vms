@@ -11,14 +11,19 @@
   "company",
   "customer",
   "customer_referance",
-  "amount",
   "column_break_fauj",
   "trip_purpose",
   "from_district",
   "from_location",
   "to_district",
   "to_loacation",
-  "item_description"
+  "item_description",
+  "income_received_section",
+  "amount",
+  "additional_amount",
+  "total_amount",
+  "section_break_taiw",
+  "remarks"
  ],
  "fields": [
   {
@@ -91,10 +96,11 @@
    "label": "To Location"
   },
   {
+   "default": "0",
    "fieldname": "amount",
-   "fieldtype": "Currency",
+   "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Amount",
+   "label": "Principal Amount",
    "reqd": 1
   },
   {
@@ -105,11 +111,36 @@
    "fieldname": "item_description",
    "fieldtype": "Data",
    "label": "Item Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "additional_amount",
+   "fieldtype": "Float",
+   "label": "Additional Amount"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Read Only",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "income_received_section",
+   "fieldtype": "Section Break",
+   "label": "Income Received"
+  },
+  {
+   "fieldname": "section_break_taiw",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-29 17:42:11.690860",
+ "modified": "2024-08-04 15:34:13.008281",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Bill",
