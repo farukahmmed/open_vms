@@ -22,6 +22,8 @@
   "amount",
   "additional_amount",
   "total_amount",
+  "column_break_ovpa",
+  "in_words",
   "section_break_taiw",
   "remarks"
  ],
@@ -125,8 +127,9 @@
   },
   {
    "fieldname": "total_amount",
-   "fieldtype": "Read Only",
-   "label": "Total Amount"
+   "fieldtype": "Float",
+   "label": "Total Amount",
+   "read_only": 1
   },
   {
    "fieldname": "income_received_section",
@@ -136,11 +139,21 @@
   {
    "fieldname": "section_break_taiw",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ovpa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "in_words",
+   "fieldtype": "Data",
+   "label": "In Words",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-04 15:34:13.008281",
+ "modified": "2024-08-09 11:49:49.041510",
  "modified_by": "Administrator",
  "module": "Open VMS",
  "name": "Bill",

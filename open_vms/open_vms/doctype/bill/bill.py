@@ -1,12 +1,8 @@
 # Copyright (c) 2024, faruk and contributors
 # For license information, please see license.txt
 
-# import frappe
 import frappe
 from frappe.utils import money_in_words
-
-
-
 from frappe.model.document import Document
 
 
