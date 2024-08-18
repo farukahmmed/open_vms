@@ -193,3 +193,14 @@ app_license = "MIT"
 # Recommended only for DocTypes which have limited documents with untranslated names
 # For example: Role, Gender, etc.
 # translated_search_doctypes = []
+
+
+# to automate stock transfer from web store to delivery store
+# Created By Faruk on 16/08/2024
+
+doc_events = {
+    "Sales Order": {
+        "on_submit": "open_vms.custom_script.create_stock_entry"
+    }
+}
+
