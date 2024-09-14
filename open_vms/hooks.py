@@ -204,3 +204,6 @@ doc_events = {
     }
 }
 
+app_include_js = [
+    "https://unpkg.com/html5-qrcode"  # Include the html5-qrcode library
+]
