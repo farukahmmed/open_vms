@@ -1,4 +1,13 @@
 
+
+
+import qrcode
+import base64
+from io import BytesIO
+
+from PIL import Image
+import frappe
+
 # to automate stock transfer from web store to delivery store
 # Created By Faruk on 16/08/2024
 
@@ -16,9 +25,9 @@
 #                       add [Company Name] in the list
 
 
-import frappe
-
 def create_stock_entry(doc, method):
+    
+
     
     try:
           # Check if the Sales Order is placed via the Shopping Cart
@@ -61,4 +70,30 @@ def create_stock_entry(doc, method):
 
 # def enqueue_stock_entry(doc, method):
 #     frappe.enqueue('open_vms.custom_script.create_stock_entry', sales_order_name=doc.name)
-    
+#----------------------------------------------------------------------------------------------------------------------
+
+# GENERATE QR CODE IN REPORTS
+# Open your terminal and navigate to your bench directory:
+
+# cd /path/to/your/bench
+# Install the libraries using bench's pip:
+# bench pip install qrcode[pil] Pillow
+
+@frappe.whitelist()
+def generate_qr_code(data):
+    qr = qrcode.QRCode(
+        version=1,
+        error_correction=qrcode.constants.ERROR_CORRECT_L,
+        box_size=10,
+        border=2,
+    )
+    qr.add_data(data)
+    qr.make(fit=True)
+
+    img = qr.make_image(fill_color="black", back_color="white")
+
+    buffer = BytesIO()
+    img.save(buffer, format="PNG")
+    img_str = base64.b64encode(buffer.getvalue()).decode('utf-8')
+
+    return f'data:image/png;base64,{img_str}'
