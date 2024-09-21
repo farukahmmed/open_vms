@@ -1,0 +1,180 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{YYYY}-{####}",
+ "creation": "2024-09-21 13:47:58.155154",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "hanger_info_section",
+  "delivery_date",
+  "company",
+  "color",
+  "fabric_type",
+  "required_gsm",
+  "finish_dia",
+  "guage",
+  "ready_date",
+  "column_break_isol",
+  "reference_no",
+  "batch_no",
+  "composition",
+  "yarn_count",
+  "finish_gsm",
+  "box_no",
+  "remarks",
+  "test_reports_section",
+  "test_document",
+  "column_break_ofof",
+  "hanger_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Reference No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Batch No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Delivery Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fabric_type",
+   "fieldtype": "Data",
+   "label": "Fabric Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "composition",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Composition",
+   "reqd": 1
+  },
+  {
+   "fieldname": "required_gsm",
+   "fieldtype": "Data",
+   "label": "Required GSM"
+  },
+  {
+   "fieldname": "hanger_info_section",
+   "fieldtype": "Section Break",
+   "label": "Hanger Info"
+  },
+  {
+   "fieldname": "finish_dia",
+   "fieldtype": "Data",
+   "label": "Finish Dia"
+  },
+  {
+   "fieldname": "guage",
+   "fieldtype": "Data",
+   "label": "Guage"
+  },
+  {
+   "fieldname": "ready_date",
+   "fieldtype": "Date",
+   "label": "Ready Date"
+  },
+  {
+   "fieldname": "column_break_isol",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "yarn_count",
+   "fieldtype": "Data",
+   "label": "Yarn Count"
+  },
+  {
+   "fieldname": "finish_gsm",
+   "fieldtype": "Data",
+   "label": "Finish GSM"
+  },
+  {
+   "fieldname": "box_no",
+   "fieldtype": "Data",
+   "label": "Box No"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Color",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test_reports_section",
+   "fieldtype": "Section Break",
+   "label": "Test Reports & Image"
+  },
+  {
+   "fieldname": "test_document",
+   "fieldtype": "Attach",
+   "label": "Test Document"
+  },
+  {
+   "fieldname": "column_break_ofof",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hanger_image",
+   "fieldtype": "Attach Image",
+   "label": "Hanger Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-21 15:04:07.138127",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "Textile RnD Hanger List",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
