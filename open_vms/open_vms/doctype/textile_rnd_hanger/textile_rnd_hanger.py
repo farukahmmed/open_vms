@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class TextileRnDHangerList(Document):
+class TextileRnDHanger(Document):
 	pass

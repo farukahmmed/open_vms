@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestTextileRnDHangerList(FrappeTestCase):
+class TestTextileRnDHanger(FrappeTestCase):
 	pass
