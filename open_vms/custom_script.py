@@ -103,7 +103,7 @@ def generate_qr_code(data):
 #--------------------------------------------------------------------------------------------------------------------------------
 
 # Get customer credit balance
-
+# It  work wth front end java script for  webshop
 
 
 
