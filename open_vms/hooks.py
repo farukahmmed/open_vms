@@ -209,10 +209,12 @@ app_include_js = [
     "https://unpkg.com/html5-qrcode" 
 ]
 
-#open_vms/public/custom_javascript.js
-# Path to the custom JavaScript file
-doctype_list_js = {
-    "Textile RnD Hanger": "public/js/textile_rnd_hanger.js"
-}
+## open_vms/public/custom_javascript.js
+## Path to the custom JavaScript file
+
+#doctype_list_js = {
+#    "Textile RnD Hanger": "public/js/textile_rnd_hanger.js",
+#    "Asset Repair": "public/js/asset_repair_list.js"
+#}
 
 
