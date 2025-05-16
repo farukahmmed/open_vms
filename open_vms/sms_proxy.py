@@ -20,7 +20,7 @@ import datetime
 
 # ERPNEXT SMS SETTINGS:
 
-# 1. Go to Settings > SMS Settings
+# Go to Settings > SMS Settings
 
 # SMS Gateway URL:	http://your_server_ip:8080/sms-proxy
 # Message Parameter:	message
