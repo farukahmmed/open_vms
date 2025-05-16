@@ -3,6 +3,33 @@ import requests
 import json
 import datetime
 
+##########################################################################
+# INSTALL FLASK:
+# pip install flask requests
+
+
+# RUN THE SMS PROXY SERVER:
+# python3 /path/sms_proxy.py
+
+# create a sms_proxy.log file in the same directory
+# and give write permission to the user running the script.
+
+    
+# TEST URL:
+# http://localhost:8080/sms-proxy?receiver=0171344292&message=Test+message
+
+# ERPNEXT SMS SETTINGS:
+
+# 1. Go to Settings > SMS Settings
+
+# SMS Gateway URL:	http://your_server_ip:8080/sms-proxy
+# Message Parameter:	message
+# Receiver Parameter:	receiver
+# Use Post:	            (Unchecked)
+# Parameters:	        (Leave empty)
+
+############################################################################
+
 app = Flask(__name__)
 
 LOG_FILE = "open_vms/sms_proxy.log"
@@ -52,29 +79,4 @@ def send_sms():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
-
-##########################################################################
-# INSTALL FLASK:
-# pip install flask requests
-
-
-# RUN THE SMS PROXY SERVER:
-# python3 /path/sms_proxy.py
-
-# create a sms_proxy.log file in the same directory
-# and give write permission to the user running the script.
-
-    
-# TEST URL:
-# http://localhost:8080/sms-proxy?receiver=0171344292&message=Test+message
-
-# ERPNEXT SMS SETTINGS:
-
-# 1. Go to Settings > SMS Settings
-
-# SMS Gateway URL:	http://your_server_ip:8080/sms-proxy
-# Message Parameter:	message
-# Receiver Parameter:	receiver
-# Use Post:	            (Unchecked)
-# Parameters:	        (Leave empty)
 
