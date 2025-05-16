@@ -1,0 +1,4 @@
+2025-05-16 12:15:29.911269 - Sent to: 8001713441292, Message: ERP-16-05-25
+12015, Response: 200 - 		{"ref_id" : [33594244], "message":"Your bulk SMS send request has successfully received","code":"1" }
+2025-05-16 12:19:10.709870 - Sent to: 8001713441292, Message: ERP-16-05-25
+12019, Response: 200 - 		{"ref_id" : [33594326], "message":"Your bulk SMS send request has successfully received","code":"1" }
