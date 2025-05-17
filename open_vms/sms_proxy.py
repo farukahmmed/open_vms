@@ -7,13 +7,11 @@ import datetime
 # INSTALL FLASK:
 # pip install flask requests
 
-
 # RUN THE SMS PROXY SERVER:
 # python3 /path/sms_proxy.py
 
 # create a sms_proxy.log file in the same directory
 # and give write permission to the user running the script.
-
     
 # TEST URL:
 # http://localhost:8080/sms-proxy?receiver=0171344292&message=Test+message
