@@ -206,8 +206,11 @@ doc_events = {
 
  # Include the html5-qrcode library
 app_include_js = [
-    "https://unpkg.com/html5-qrcode" 
+    "https://unpkg.com/html5-qrcode",
+    "/assets/open_vms/js/customization_mr.js",
+    
 ]
+# open_vms/public/js/customization_mr.js
 
 ## open_vms/public/custom_javascript.js
 ## Path to the custom JavaScript file

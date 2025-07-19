@@ -1,0 +1,35 @@
+Material Request Supplier & Stock Info Customization
+
+Developer: Tanvir Mahmud (Jr. Software Engineer) 
+Purpose: 
+●	In the material request doctype, the item table should have Actual Qty (target warehouse-wise), All Warehouse Qty, Last Purchase Rate, and Supplier (last purchase supplier)
+Step 1 (Actual Qty):
+●	Find Material Request Item (child doctype) and start customizing the doctype.
+●	Find Actual Qty (Float Type)  field and checked  “In List View” checkbox.
+Step 2 (Last Purchase Rate):
+●	Create New Field “Last Purchase Rate” (currency/float type) 
+●	Checked “In List View” checkbox.
+●	Fetch From(1st select) -> Item(item_code) 
+●	Fetch From(2nd select) -> Last Purchase Rate(Float)
+Step 3:
+●	Create two more custom fields, “All Warehouse Qty” and “Supplier”
+●	For both of them, checked the “In List View” checkbox. Make sure they are visible in the Material Request’s Item table.
+Step 4:
+●	Create new JS file inside js folder (open_vms/public/js/customization_mr.js)
+●	In your customization_mr.js file paste the code below:
+
+●	Now in your custom app’s hooks (open_vms/public/py/customization_mr.py) paste the code:
+
+app_include_js = [
+   "/assets/open_vms/js/customization_mr.js",
+]
+
+●	Create new py file for whitelist api method (open_vms/public/py/customization_mr.py)
+
+
+
+Step 5:
+●	Before testing “Material Request”, you have to must migrate your site database and restart the bench.
+
+bench  --site site_name migrate
+bench restart 
