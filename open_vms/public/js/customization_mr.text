@@ -12,7 +12,7 @@ Step 2 (Last Purchase Rate):
 ●	Fetch From(1st select) -> Item(item_code) 
 ●	Fetch From(2nd select) -> Last Purchase Rate(Float)
 Step 3:
-●	Create two more custom fields, “All Warehouse Qty” and “Supplier”
+●	Create two more custom fields, “Current Stock Qty” and “Supplier”
 ●	For both of them, checked the “In List View” checkbox. Make sure they are visible in the Material Request’s Item table.
 Step 4:
 ●	Create new JS file inside js folder (open_vms/public/js/customization_mr.js)

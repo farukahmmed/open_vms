@@ -208,6 +208,7 @@ doc_events = {
 app_include_js = [
     "https://unpkg.com/html5-qrcode",
     "/assets/open_vms/js/customization_mr.js",
+    "/assets/open_vms/js/production_plan_customization.js",
     
 ]
 # open_vms/public/js/customization_mr.js
@@ -219,5 +220,10 @@ app_include_js = [
 #    "Textile RnD Hanger": "public/js/textile_rnd_hanger.js",
 #    "Asset Repair": "public/js/asset_repair_list.js"
 #}
+
+doctype_js = {
+   "BOM" : "public/js/bom_sales_order_filter.js",
+}
+
 
 

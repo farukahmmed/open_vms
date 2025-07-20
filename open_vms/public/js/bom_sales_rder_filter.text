@@ -1,0 +1,28 @@
+Custom Sales Order Filtering in BOM
+Objective 
+Allow users to filter and select only those Sales Orders in the BOM form where the selected Finished Good Item is present in Sales Order Items, and the Sales Order status is not Completed or To Bill.
+
+Developer: Tanvir Mahmud (Jr. Software Engineer), PG.
+
+Prerequisite
+By Default, there is no sales order field in BOM. First, create a custom link field for the sales order.
+
+
+Implementation
+●	Create a js file bom_sales_order_filtered.js (apps/open_vms/open_vms/public/js/bom_sales_order_filter.js)
+●	Paste the code below in that js file:
+
+
+●	Paste the following code into your custom app's hooks.py file (app/custom_app/custom_app/hooks.py).
+doctype_js = {
+   "BOM" : "public/js/bom_sales_order_filter.js",
+}
+
+●	Create a new py file sales_order_queries.py (apps//open_vms/open_vms /sales_order_queries.py). Make sure the file name matches with your js return query.
+●	Paste the following code into your sales_order_queries.py file
+
+
+
+Now migrate your site “bench --site site_name migrate”
+●	Clear app’s cache “bench --site site_name clear-cache”
+●	Restart your bench “bench restart” 
