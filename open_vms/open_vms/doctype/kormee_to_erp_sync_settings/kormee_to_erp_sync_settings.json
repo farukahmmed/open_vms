@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-26 10:47:45.498913",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sql_server_setting_section",
+  "server",
+  "port",
+  "database",
+  "column_break_yqor",
+  "username",
+  "password",
+  "section_break_zzri",
+  "sql_query",
+  "erpnext_settings_section",
+  "erpnext_base_url",
+  "erpnext_api_key",
+  "erpnext_api_secret"
+ ],
+ "fields": [
+  {
+   "fieldname": "sql_server_setting_section",
+   "fieldtype": "Section Break",
+   "label": "SQL Server Setting"
+  },
+  {
+   "fieldname": "server",
+   "fieldtype": "Data",
+   "label": "Server"
+  },
+  {
+   "fieldname": "port",
+   "fieldtype": "Int",
+   "label": "Port"
+  },
+  {
+   "fieldname": "database",
+   "fieldtype": "Data",
+   "label": "Database"
+  },
+  {
+   "fieldname": "column_break_yqor",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username"
+  },
+  {
+   "fieldname": "section_break_zzri",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sql_query",
+   "fieldtype": "Code",
+   "label": "SQL Query"
+  },
+  {
+   "fieldname": "erpnext_settings_section",
+   "fieldtype": "Section Break",
+   "label": "ERPNext Settings"
+  },
+  {
+   "fieldname": "erpnext_base_url",
+   "fieldtype": "Data",
+   "label": "ERPNext Base URL"
+  },
+  {
+   "fieldname": "erpnext_api_key",
+   "fieldtype": "Data",
+   "label": "ERPNext API Key"
+  },
+  {
+   "fieldname": "erpnext_api_secret",
+   "fieldtype": "Data",
+   "label": "ERPNext API Secret"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-07-26 16:07:59.541098",
+ "modified_by": "Administrator",
+ "module": "Open VMS",
+ "name": "Kormee to ERP Sync Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
